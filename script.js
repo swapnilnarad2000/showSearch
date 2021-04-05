@@ -13,7 +13,7 @@ let form = document.addEventListener('submit',(default1)=>{
     getMovie(query);
 })
 let getMovie =async (query)=>{
-    let res = await axios.get(`http://api.tvmaze.com/search/shows?q=${query}`);
+    let res = await axios.get(`https://api.tvmaze.com/search/shows?q=${query}`);
     // console.log(res);
     for(let i=0;i<10;i++){
         if(res.data[i].show.image){
